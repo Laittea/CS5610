@@ -1,0 +1,38 @@
+/* Grid container styling */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 10px 20px; 
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid items styling */
+.grid-item {
+    padding: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.grid-item a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.grid-item a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile friendly design*/
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+}
+/*First child pseudo element*/
+.grid-item:first-child {
+    font-weight: bold; 
+    color: #6e0b0b; 
+}

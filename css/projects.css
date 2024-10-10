@@ -1,0 +1,66 @@
+
+
+
+/* List styling */
+.main-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-content ul li {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.main-content ul li:hover {
+    transform: translateY(-5px);
+}
+
+/* Project titles */
+.main-content ul li strong {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Time class styling*/
+.main-content .time {
+    display: block;
+    font-weight: normal;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+/* Nested bullet points under each project */
+.main-content ul li ul {
+    padding-left: 20px;
+}
+
+.main-content ul li ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* For mobile friendly design*/
+@media (max-width: 768px) {
+    
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
